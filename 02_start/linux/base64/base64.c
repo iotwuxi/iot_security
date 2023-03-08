@@ -18,7 +18,8 @@ static uint8_t msg[] =
 void dump_buf(char *info, uint8_t *buf, uint32_t len)
 {
     mbedtls_printf("%s", info);
-    for(uint32_t i = 0; i < len; i++) {
+    for(uint32_t i = 0; i < len; i++) 
+    {
         mbedtls_printf("%02x ", buf[i]);
     }
     mbedtls_printf("\n");
